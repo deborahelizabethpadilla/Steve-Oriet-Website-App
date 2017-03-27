@@ -21,17 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xvj-xe-gaq">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MT-Vo-vZL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MT-Vo-vZL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0MT-Vo-vZL" secondAttribute="bottom" id="Kuh-Tz-rD9"/>
+                            <constraint firstItem="0MT-Vo-vZL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U6p-qu-eBI"/>
+                            <constraint firstAttribute="trailing" secondItem="0MT-Vo-vZL" secondAttribute="trailing" id="dRw-Om-HVu"/>
+                            <constraint firstItem="0MT-Vo-vZL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uat-Xq-REe"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="0MT-Vo-vZL" id="smt-bG-kXn"/>
