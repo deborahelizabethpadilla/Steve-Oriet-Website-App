@@ -20,7 +20,9 @@ class ViewController: UIViewController, UIWebViewDelegate {
         
         //Allow Website In Web View
         
-        webView.loadRequest(URLRequest(url: URL(string: "www.steve-oriet.com")!))
+        let url = NSURL (string: "www.steve-oriet.com")
+        let request = URLRequest(url: url! as URL)
+        webView.loadRequest(request)
         
     }
 
